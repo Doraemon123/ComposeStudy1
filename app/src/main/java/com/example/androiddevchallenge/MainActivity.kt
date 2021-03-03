@@ -102,7 +102,8 @@ fun DogItem(dogItem: DogItem, onDogClick: (DogItem) -> Unit = {}) {
         modifier = Modifier
             .clickable(onClick = { onDogClick(dogItem) })
             .fillMaxWidth()
-            .padding(8.dp), verticalAlignment = Alignment.CenterVertically
+            .padding(8.dp),
+        verticalAlignment = Alignment.CenterVertically
     ) {
         val context = LocalContext.current
         Surface(
