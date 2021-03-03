@@ -41,14 +41,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.androiddevchallenge.ui.DogViewModel
 import com.example.androiddevchallenge.ui.data.DogItem
 import com.example.androiddevchallenge.ui.theme.MyTheme
-import com.google.android.material.internal.ContextUtils
 
 class MainActivity : AppCompatActivity() {
     private val viewModel by viewModels<DogViewModel>()
@@ -160,7 +158,7 @@ fun DogDetail(dogItem: DogItem) {
             Modifier.aspectRatio(1f),
             contentScale = ContentScale.Crop
         )
-        Text("${dogItem.name}", fontWeight = FontWeight.Bold)
+        Text(dogItem.name, fontWeight = FontWeight.Bold)
         Text("Age:${dogItem.age}", Modifier.padding(5.dp), textAlign = TextAlign.Left)
         Text(
             "Description:${dogItem.discription}",
