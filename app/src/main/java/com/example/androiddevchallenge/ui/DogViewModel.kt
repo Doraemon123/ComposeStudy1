@@ -36,5 +36,5 @@ class DogViewModel : ViewModel() {
         dogList.add(DogItem("8", "CoCo", 3, R.mipmap.keji, "A very cute baby"))
         dogList.add(DogItem("9", "Spike", 1, R.mipmap.keji, "A very cute baby"))
         dogList.add(DogItem("10", "Avenger", 2, R.mipmap.keji, "A very cute baby"))
-        }
+    }
 }
