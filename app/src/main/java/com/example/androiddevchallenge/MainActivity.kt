@@ -91,11 +91,7 @@ fun LoadDogs(dogList: List<DogItem>, onDogClick: (DogItem) -> Unit = {}) {
             DogItem(dog) {
                 onDogClick(it)
             }
-            Divider(
-                color = Color.LightGray, modifier = Modifier
-                    .fillMaxWidth()
-                    .height(1.dp)
-            )
+            Divider(color = Color.LightGray, modifier = Modifier.fillMaxWidth().height(1.dp))
         }
     }
 }
